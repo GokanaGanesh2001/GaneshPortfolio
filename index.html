@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!--box icons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--custom css-->
+
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--header design-->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Skills</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!--home section design-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Gokana Ganesh</h1>
+            <h3>And I'm a <span class="multiple-text"></span></h3>
+            <p>Certified Full Stack Java Developer with a keen interest in applying my skills. Driven by a passion for continuous learning. Seeking opportunities to leverage my expertise in Java, HTML, CSS, and SQL to contribute to the success of an innovative organisation.</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="https://www.linkedin.com/in/gokana-ganesh/"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <a href="Gokana Ganesh Resume .pdf" download class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="home.jpg" alt="">
+        </div>
+    </section>
+
+   <!--about section design-->
+   <section class="about" id="about">
+    <div class="about-img">
+        <img src="about.jpg" alt="">
+    </div>
+    <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Full Stack Java Developer!</h3>
+        <p> Aspiring Full Stack Java Developer with a keen interest in creating dynamic and user-centric applications. 
+            Proficient in front-end technologies like HTML, CSS and equipped with strong Java programming skills for robust 
+            back-end development. Familiar with SQL for efficient database management. Eager to contribute my enthusiasm and 
+            adaptability to a collaborative team while continuously learning and growing in the field of Full Stack Development.</p>
+
+        <a href="https://www.linkedin.com/in/gokana-ganesh/" class="btn">Read More</a>
+
+    </div>
+   </section> 
+  
+   <!--Service section design-->
+   <section class="services" id="services">
+    <h2 class="heading">My<span>skills</span></h2>
+
+    <div class="services-container">
+        <div class="services-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Front-End</h3>
+            <p>*HTML *CSS *Java Script *Angular
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+            <i class='bx bx-code-curly' ></i>
+            <h3>Back-End</h3>
+            <p>*Java *Spring Boot *JDBC *Hibernate </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+            <i class='bx bxs-data' ></i>
+            <h3>DataBase</h3>
+            <p>*SQL *MySQL *Oracle</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+       
+    </div>   
+   </section>
+   <!--portfolio section design-->
+   <section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Project</span></h2>
+
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="LearnPro.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>LearnPro</h4>
+                <p>E-Learning Web Application</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="TicTacToe.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Tic-Tac-Toe</h4>
+                <p>Web Game</p>
+                <a href="https://gokanaganesh2001.github.io/TicTacToeGame/"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <!--contact section design-->
+
+   <section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+    <form action="#">
+        <div class="input-box">
+            <input name="Full Name" type="text" placeholder="Full Name">
+            <input name="Email Address" type="email" placeholder="Email Address">
+        </div>
+
+        <div class="input-box">
+            <input name="Mobile Number" type="number" placeholder="Mobile Number">
+            <input name="Email Subject" type="text" placeholder="Email Subject">
+        </div>
+
+        <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="button" value="Send Message" class="btn" onclick="sendEmail();">
+
+    </form>
+   </section>
+
+   <!--footer design-->
+   <footer class="footer">
+    <div class="footer-text">
+        <p>Copyright &copy; 2023 by Gokana Ganesh | All Rights Reserved</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+   </footer>
+
+  <!--scroll reveal-->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!--typed js-->
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+<!-- Include EmailJS library only once -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+<!--custom js-->
+<script src="js/script.js"></script>
+
+
+
+    
+
+
+</body>
+</html>
